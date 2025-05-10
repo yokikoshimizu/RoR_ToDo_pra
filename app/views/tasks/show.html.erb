@@ -1,0 +1,14 @@
+<h1>タスク詳細</h1>
+<p>各タスクに関しての操作をしてください</p>
+
+<p>
+    <strong>タスク名：</strong><br>
+    <%= @tasks.name %>
+</p>
+
+<p>
+    <strong>タスク詳細：</strong><br>
+    <%= @tasks.content %>
+</p>
+
+<%= link_to "一覧に戻る", tasks_path %>

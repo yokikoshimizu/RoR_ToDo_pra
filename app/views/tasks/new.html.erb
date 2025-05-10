@@ -1,0 +1,16 @@
+<hi>タスクの新規登録</hi>
+<%= form_with model: @tasks, local: true do |form| %>
+    <div>
+        <%= form.label :name, "タスク名" %><br>
+        <%= form.text_field :name %>
+    </div>
+    <div>
+        <%= form.label :content, "タスク内容" %><br>
+        <%= form.text_area :content %>
+    </div>
+    <div>
+        <%= form.submit "作成する" %>
+    </div>
+
+    <%= link_to("一覧に戻る", tasks_path)%>
+<% end %>
